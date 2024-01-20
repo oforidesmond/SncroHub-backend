@@ -1,0 +1,24 @@
+GET http://localhost:8000/user
+
+###
+POST http://localhost:8000/user
+Content-Type: application/json
+
+{
+  "name":"Test USer",
+  "email":"test@gmail.com",
+  "image":"Test Image"
+}
+
+###
+
+
+POST http://localhost:8000/post
+Content-Type: application/json
+
+{
+  "postText":"Sample Post Msg",
+  "createdAt":"233255644",
+  "createdBy":"65a9b520e16cd252bee2b7f6",
+  "imageUrl":"sampleUrl"
+}
