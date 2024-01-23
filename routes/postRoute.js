@@ -7,7 +7,7 @@ const router=express.Router();
 //Get All Posts
 router.get('/',async(req,res)=>{
   try{
-  const posts=await Post.find();
+  const posts=await Post.find().populate('createdBy').sort({createdAt:-1});
   res.json(posts)
   }
   catch(error)

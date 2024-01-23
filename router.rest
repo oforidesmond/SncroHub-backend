@@ -1,6 +1,10 @@
 GET http://localhost:8000/user
 
 ###
+GET http://localhost:8000/user/descoservicesgh2@gmail.com
+
+
+###
 POST http://localhost:8000/user
 Content-Type: application/json
 
@@ -11,7 +15,9 @@ Content-Type: application/json
 }
 
 ###
+GET http://localhost:8000/post
 
+###
 
 POST http://localhost:8000/post
 Content-Type: application/json

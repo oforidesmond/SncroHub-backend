@@ -16,10 +16,18 @@ res.status(500).json({message:error.message})
 })
 
 
-
-//Get user by ID
-
-
+//Get user by Email
+router.get('/:email',async(req,res)=>{
+  const userEmail=req.params.email;
+  try{
+  const users=await User.findOne({email:userEmail});
+  res.json(users)
+  }
+  catch(error)
+  {
+  res.status(500).json({message:error.message})
+  }
+  })
 
 
 //create user
